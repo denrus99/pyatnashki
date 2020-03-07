@@ -65,6 +65,7 @@ public class Graph {
                 return this.nodes.get(i);
             }
         }
+        /* TODO */
         return new Node(0, 0);
     }
 
@@ -83,6 +84,20 @@ public class Graph {
 //        for (int i = 0; i < nodes.size(); i++) {
 //            result[i] = nodes.get(i).GetValue();
 //        }
+        return result;
+    }
+
+    public ArrayList<Graph> GetNextStates() {
+        ArrayList<Graph> result = new ArrayList<Graph>();
+        for (Node emptyNode : nodes) {
+            if (emptyNode.GetValue() == 0) {
+                for (Node currentNode : emptyNode.GetConnectedNodes()){
+                    Graph newState = new Graph(this.GetCurrentState());
+                    newState.GetNodeByID(emptyNode.GetID()).ChangeValueWith(newState.GetNodeByID(currentNode.GetID()));
+                    result.add(newState);
+                }
+            }
+        }
         return result;
     }
 }

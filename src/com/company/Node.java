@@ -6,12 +6,10 @@ public class Node {
     private ArrayList<Node> connectedNodes = new ArrayList<Node>();
     private int ID;
     private int value;
-    private boolean checked;
 
     public Node(int value, int ID) {
         this.value = value;
         this.ID = ID;
-        this.checked = false;
     }
 
     public void ConnectWith(Node anotherNode) {
@@ -40,5 +38,9 @@ public class Node {
 
     public int GetID() {
         return this.ID;
+    }
+
+    public ArrayList<Node> GetConnectedNodes(){
+        return connectedNodes;
     }
 }
