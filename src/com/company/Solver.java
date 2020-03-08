@@ -13,12 +13,13 @@ public class Solver implements ConundrumSolver {
         while (queue.size() != 0) {
             Graph state = queue.poll();
             state.ShowCurrentState(state.GetCurrentState());
+            System.out.println(state.hashCode());
             if (state.IsSolved()) break;
             ArrayList<Graph> nextStates = state.GetNextStates();
-            for (Graph g : nextStates) {
-                if (!stateTrack.containsKey(g)){
-                    stateTrack.put(g,state);
-                    queue.offer(g);
+            for (Graph nextState : nextStates) {
+                if (!stateTrack.containsKey(nextState)){
+                    stateTrack.put(nextState,state);
+                    queue.offer(nextState);
                 }
             }
         }

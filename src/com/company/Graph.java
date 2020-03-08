@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Graph {
     private ArrayList<Node> nodes = new ArrayList<Node>();
@@ -113,5 +114,26 @@ public class Graph {
             System.out.print(currentState[i] + "\t");
         }
         System.out.println("");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Graph graph = (Graph) o;
+        for (int i = 0; i < nodes.size(); i++) {
+            if (nodes.get(i).GetValue()!=((Graph) o).nodes.get(i).GetValue())
+                return false;
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 0;
+        for (int v:this.GetCurrentState()) {
+            result = result*10 + v;
+        }
+        return result;
     }
 }
