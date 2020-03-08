@@ -60,13 +60,14 @@ public class Graph {
     }
 
     public Node GetNodeByID(int ID) {
-        for (int i = 0; i < this.nodes.size(); i++) {
-            if (ID == this.nodes.get(i).GetID()) {
-                return this.nodes.get(i);
-            }
-        }
+//        for (int i = 0; i < this.nodes.size(); i++) {
+//            if (ID == this.nodes.get(i).GetID()) {
+//                return this.nodes.get(i);
+//            }
+//        }
         /* TODO */
-        return new Node(0, 0);
+//        return new Node(0, 0);
+        return nodes.get(ID);
     }
 
     public int[] GetCurrentState() {
@@ -91,7 +92,7 @@ public class Graph {
         ArrayList<Graph> result = new ArrayList<Graph>();
         for (Node emptyNode : nodes) {
             if (emptyNode.GetValue() == 0) {
-                for (Node currentNode : emptyNode.GetConnectedNodes()){
+                for (Node currentNode : emptyNode.GetConnectedNodes()) {
                     Graph newState = new Graph(this.GetCurrentState());
                     newState.GetNodeByID(emptyNode.GetID()).ChangeValueWith(newState.GetNodeByID(currentNode.GetID()));
                     result.add(newState);
@@ -99,5 +100,18 @@ public class Graph {
             }
         }
         return result;
+    }
+
+    public boolean IsSolved() {
+        for (Node n : nodes)
+            if (n.GetValue() != n.GetID()) return false;
+        return true;
+    }
+
+    public static void ShowCurrentState(int[] currentState){
+        for (int i = 0; i < currentState.length; i++) {
+            System.out.print(currentState[i] + "\t");
+        }
+        System.out.println("");
     }
 }
