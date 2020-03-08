@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63906ed0-baea-461e-ae24-53efe025bdfb" name="Default Changelist" comment="Yeah, it works(i hope)">
+    <list default="true" id="63906ed0-baea-461e-ae24-53efe025bdfb" name="Default Changelist" comment="Clean code before code analysis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirstApp/com/company/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstApp/com/company/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstApp/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstApp/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstApp/com/company/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstApp/com/company/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirstApp/com/company/Solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirstApp/com/company/Solver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Solver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1582641034646" duration="6194000" />
       <workItem from="1583003804145" duration="6826000" />
       <workItem from="1583613359325" duration="10035000" />
-      <workItem from="1583656878349" duration="11793000" />
+      <workItem from="1583656878349" duration="12335000" />
     </task>
     <task id="LOCAL-00001" summary="Add Graph.GetNextStates(v1)">
       <created>1583625412508</created>
@@ -121,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583664329019</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Clean code before code analysis">
+      <created>1583673480263</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583673480263</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +146,9 @@
     <MESSAGE value="Maybe it works" />
     <MESSAGE value="Override hashcode() and equals() for Graph" />
     <MESSAGE value="Yeah, it works(i hope)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yeah, it works(i hope)" />
+    <MESSAGE value="Clean code(maybe)" />
+    <MESSAGE value="Clean code before code analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean code before code analysis" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583673102569">
@@ -158,14 +163,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582665021963" />
-    <state x="707" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583669632671">
+    <state x="707" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583674009420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="707" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1583669632671" />
-    <state x="519" y="164" key="CommitChangelistDialog2" timestamp="1583673432814">
+    <state x="707" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1583674009420" />
+    <state x="519" y="164" key="CommitChangelistDialog2" timestamp="1583673489468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="519" y="164" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583673432814" />
+    <state x="519" y="164" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583673489468" />
     <state width="405" height="466" key="DebuggerActiveHint" timestamp="1583010122481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,22 +179,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="489" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583010379778" />
-    <state width="1874" height="213" key="GridCell.Tab.0.bottom" timestamp="1583673432850">
+    <state width="1874" height="213" key="GridCell.Tab.0.bottom" timestamp="1583674033147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583673432850" />
-    <state width="1874" height="213" key="GridCell.Tab.0.center" timestamp="1583673432849">
+    <state width="1874" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583674033147" />
+    <state width="1874" height="213" key="GridCell.Tab.0.center" timestamp="1583674033147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583673432849" />
-    <state width="1874" height="213" key="GridCell.Tab.0.left" timestamp="1583673432849">
+    <state width="1874" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583674033147" />
+    <state width="1874" height="213" key="GridCell.Tab.0.left" timestamp="1583674033147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583673432849" />
-    <state width="1874" height="213" key="GridCell.Tab.0.right" timestamp="1583673432850">
+    <state width="1874" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583674033147" />
+    <state width="1874" height="213" key="GridCell.Tab.0.right" timestamp="1583674033147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583673432850" />
+    <state width="1874" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583674033147" />
     <state width="916" height="261" key="GridCell.Tab.1.bottom" timestamp="1583671499585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

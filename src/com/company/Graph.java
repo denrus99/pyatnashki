@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 
 public class Graph {
-    private ArrayList<Node> nodes = new ArrayList<Node>();
+    private final ArrayList<Node> nodes = new ArrayList<>();
 
     public Graph(int[] initialState) {
         if (initialState.length < 8)
@@ -51,7 +51,7 @@ public class Graph {
     }
 
     public ArrayList<Graph> getNextStates() {
-        ArrayList<Graph> result = new ArrayList<Graph>();
+        ArrayList<Graph> result = new ArrayList<>();
         for (Node emptyNode : nodes) {
             if (emptyNode.getValue() == 0) {
                 for (Node currentNode : emptyNode.getConnectedNodes()) {
@@ -71,10 +71,10 @@ public class Graph {
     }
 
     public void showCurrentState(int[] currentState) {
-        for (int i = 0; i < currentState.length; i++) {
-            System.out.print(currentState[i] + "\t");
+        for (int value:currentState) {
+            System.out.print(value + "\t");
         }
-        System.out.println("");
+        System.out.println();
     }
 
     public int getChangedValue(Graph anotherGraph) {

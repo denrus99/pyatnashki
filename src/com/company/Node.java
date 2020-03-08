@@ -3,8 +3,8 @@ package com.company;
 import java.util.ArrayList;
 
 public class Node {
-    private ArrayList<Node> connectedNodes = new ArrayList<Node>();
-    private int id;
+    private final ArrayList<Node> connectedNodes = new ArrayList<>();
+    private final int id;
     private int value;
 
     public Node(int value, int id) {
@@ -19,13 +19,10 @@ public class Node {
         anotherNode.connectWith(this);
     }
 
-    public boolean changeValueWith(Node anotherNode) {
-        if (!this.connectedNodes.contains(anotherNode))
-            return false;
+    public void changeValueWith(Node anotherNode) {
         int temp = this.value;
         this.setValue(anotherNode.value);
         anotherNode.setValue(temp);
-        return true;
     }
 
     private void setValue(int value) {

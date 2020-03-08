@@ -7,9 +7,9 @@ public class Solver implements ConundrumSolver {
     public int[] resolve(int[] initialState) {
         Graph start = new Graph(initialState);
         Graph end = new Graph(new int[]{1, 2, 3, 4, 0, 5, 6, 7});
-        Map<Graph, Graph> stateTrack = new HashMap<Graph, Graph>();
+        Map<Graph, Graph> stateTrack = new HashMap<>();
         stateTrack.put(start, null);
-        Queue<Graph> queue = new ArrayDeque<Graph>();
+        Queue<Graph> queue = new ArrayDeque<>();
         queue.offer(start);
         while (queue.size() != 0) {
             Graph state = queue.poll();
@@ -22,7 +22,7 @@ public class Solver implements ConundrumSolver {
                 }
             }
         }
-        ArrayList<Integer> result = new ArrayList<Integer>();
+        ArrayList<Integer> result = new ArrayList<>();
         while (end != null) {
             end.showCurrentState(end.getCurrentState());
             if (!(stateTrack.get(end) == null))
