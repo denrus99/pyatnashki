@@ -4,43 +4,43 @@ import java.util.ArrayList;
 
 public class Node {
     private ArrayList<Node> connectedNodes = new ArrayList<Node>();
-    private int ID;
+    private int id;
     private int value;
 
-    public Node(int value, int ID) {
+    public Node(int value, int id) {
         this.value = value;
-        this.ID = ID;
+        this.id = id;
     }
 
-    public void ConnectWith(Node anotherNode) {
+    public void connectWith(Node anotherNode) {
         if (this.connectedNodes.contains(anotherNode))
             return;
         this.connectedNodes.add(anotherNode);
-        anotherNode.ConnectWith(this);
+        anotherNode.connectWith(this);
     }
 
-    public boolean ChangeValueWith(Node anotherNode) {
+    public boolean changeValueWith(Node anotherNode) {
         if (!this.connectedNodes.contains(anotherNode))
             return false;
         int temp = this.value;
-        this.ChangeValue(anotherNode.value);
-        anotherNode.ChangeValue(temp);
+        this.setValue(anotherNode.value);
+        anotherNode.setValue(temp);
         return true;
     }
 
-    private void ChangeValue(int value) {
+    private void setValue(int value) {
         this.value = value;
     }
 
-    public int GetValue() {
+    public int getValue() {
         return this.value;
     }
 
-    public int GetID() {
-        return this.ID;
+    public int getId() {
+        return this.id;
     }
 
-    public ArrayList<Node> GetConnectedNodes(){
+    public ArrayList<Node> getConnectedNodes(){
         return connectedNodes;
     }
 }
